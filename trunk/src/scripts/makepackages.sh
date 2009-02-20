@@ -14,6 +14,8 @@ $MAKER robustcommand
 $MAKER dateiliste
 $MAKER extpfeil
 $MAKER faktor
-$MAKER mpgmpar
+$MAKER minipage-marginpar
 $MAKER noitcrul
 $MAKER randbild
+
+$MAKER gmdoc-enhance

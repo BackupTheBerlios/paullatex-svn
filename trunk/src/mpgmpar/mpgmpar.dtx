@@ -24,7 +24,7 @@
 % \iffalse
 %<package>\NeedsTeXFormat{LaTeX2e}[2003/12/01]
 %<package>\ProvidesPackage{mpgmpar}
-%<package> [2006/05/23 v0.2 Randnotizen auch in Minipages (PE)]
+%<package> [2008/04/07 v0.3 Randnotizen auch in Minipages (PE)]
 %
 %<*driver>
 \documentclass[draft,ngerman]{ltxdoc}
@@ -36,7 +36,7 @@
 %</driver>
 % \fi
 %
-% \CheckSum{47}
+% \CheckSum{50}
 %
 % \CharacterTable
 %  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
@@ -228,9 +228,11 @@
 %\end{verbatim}
 %   aus \pack{ifthen} gemacht, aber das hatte Nebenwirkungen (da für
 %   den Vergleich '##1' expandiert wurde). Daher direkt mit '\ifx'.
+%   \changes{v0.3}{2008/04/07}{Fehler im Vergleich gefunden, jetzt korrigiert durch weitere Indirektion beim Vergleich.}
 %    \begin{macrocode}
       \def\temp@a{##1}%
-      \ifx\mpgmpar@dummy\temp@a%
+      \def\temp@b{\mpgmpar@dummy}%
+      \ifx\temp@b\temp@a%
 %    \end{macrocode}
 %   Dann kopieren wir (global) einfach den '\marginpar'-Aufruf an das Ende unseres
 %   "`Speicher-Makros"' '\mpgmpar@savedmargins'.
