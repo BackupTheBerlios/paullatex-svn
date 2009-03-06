@@ -135,12 +135,12 @@ rm -f $WORKDIR/* &&
 mkdir -p $WORKDIR &&
 
 cp "$packagedir/$packagename.dtx" "$WORKDIR/" &&
-chmod -w "$WORKDIR/$packagename.dtx"
+# chmod -w "$WORKDIR/$packagename.dtx"
 
 if [ -e $packagedir/README ]
 then
   cp $packagedir/README $WORKDIR/
-  chmod -w $WORKDIR/README
+#  chmod -w $WORKDIR/README
 fi &&
 
 #
@@ -166,7 +166,7 @@ fi &&
 if [ -e "${packagedir}/${packagename}.ins" ]
 then
 	cp "${packagedir}/${packagename}.ins" $WORKDIR/ &&
-    chmod -w "$WORKDIR/$packagename.ins"
+#    chmod -w "$WORKDIR/$packagename.ins"
 	pushd $WORKDIR &&
 	eval $INSTALLTEX ${packagename}.ins
 else
