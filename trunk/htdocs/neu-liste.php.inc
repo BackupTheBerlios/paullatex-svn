@@ -5,6 +5,18 @@
    */
 
 $mesagxoj[] = 
+    array('dato' => '2011-10-08',
+          'id' => 'berlios-github',
+          'titolo' => "Jetzt bei Github statt BerliOS",
+          'teksto' => "<p>Nachdem BerliOS
+<a href='http://developer.berlios.de/forum/forum.php?forum_id=37450'>
+angekündigt hat, zum Jahresende die Pforten zu schließen</a>, sind
+<a href='http://epaul.github.com/paullatex/'>Paul's LaTeX-Pakete jetzt
+bei Github zu finden</a>.
+</p>",
+	  'ligo' => "http://epaul.github.com/paullatex/");
+
+$mesagxoj[] = 
     array('dato' => '2009-11-06',
 	  'id' => 'pauldoc-v0.5',
 	  'titolo' => "Pauldoc 0.5",
